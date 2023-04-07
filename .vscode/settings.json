@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.fastScrollSensitivity": 1,
+    "workbench.list.fastScrollSensitivity": 1,
+    "terminal.integrated.fastScrollSensitivity": 1
+}
