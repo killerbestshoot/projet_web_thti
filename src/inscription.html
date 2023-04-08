@@ -6,12 +6,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./assets/ico/pla.png" type="image/x-icon">
-        <link rel="stylesheet" href="css/incription.css">
+        <link rel="stylesheet" href="css/inscription.css">
         <title>Inscription</title>
     </head>
 
     <body>
+        <section>
+            <div>
+                <h2>
+                    Trip Haute Taille Investigation
+                </h2>
+                <h4>
+                    Inscription
+                </h4>
+            </div>
+            <div>
+                <form action="" method="post">
+                    <label for="_name">
+                        Nom
+                    </label>
+                    <input type="text" name="name" id="_name" required>
+                    <label for="_prenom" id="label_1">Prenom</label>
+                    <input type="text" name="" id="_prenom">
+                    <label for="_email" id="label_2">Email</label>
+                    <input type="email" name="" id="_email">
+                    <label for="_password" id="label_3">Password</label>
+                    <input type="password" name="" id="_password">
+                    <small id="_password_fault">mot de passe insatisfaisant </small>
+                    <label for="_confirm" id="label_4">Confirm Password</label>
+                    <input type="password" name="" id="_confirm">
+                    <small id="_password_conf">mot de passe ne correspond pas</small>
+                    <input type="submit" value="S'enregistrer" id="_ok">
 
+                </form>
+            </div>
+        </section>
+        <script src="js/index.js"></script>
     </body>
 
 </html>

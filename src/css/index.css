@@ -18,6 +18,57 @@ html body {
   background-repeat: no-repeat;
   margin: 0;
 }
+html body #_news_letter {
+  width: 99.7%;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  align-items: center;
+  background-color: #fff;
+  height: 15vh;
+  padding: 2px;
+}
+html body #_news_letter form {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body #_news_letter form #_email {
+  width: 65%;
+  height: 3em;
+  margin-right: 1em;
+  border-radius: 6px;
+  outline: none;
+  border: 0;
+  background-color: rgb(216, 211, 211);
+}
+html body #_news_letter form #_email:hover {
+  background-color: #f1f1f1;
+}
+html body #_news_letter form #_email::-moz-placeholder {
+  padding-left: 2px;
+}
+html body #_news_letter form #_email:-ms-input-placeholder {
+  padding-left: 2px;
+}
+html body #_news_letter form #_email::placeholder {
+  padding-left: 2px;
+}
+html body #_news_letter form #_ok {
+  width: 10em;
+  height: 3.2em;
+  border: 0;
+  border-radius: 6px;
+  background-color: rgb(124, 231, 71);
+}
+html body #_news_letter form #_ok:hover {
+  cursor: pointer;
+  background-color: rgb(103, 182, 63);
+  box-shadow: black 0px 0px 20px 0px;
+  transform: translateY(-5px);
+}
 
 li {
   list-style: none;
@@ -28,6 +79,10 @@ a {
 }
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -95px;
+  z-index: 50;
   width: 99%;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -38,7 +93,6 @@ header {
   padding: 5px;
 }
 header #logo {
-  border: 1px solid black;
   width: 70%;
   margin: auto;
   height: 4em;
@@ -50,13 +104,11 @@ header #logo {
 }
 header #logo a {
   height: 100%;
-  border: 1px solid black;
   width: 30%;
   display: flex;
   justify-content: center;
 }
 header #logo a img {
-  border: 1px solid black;
   width: 100%;
   background-size: contain;
   height: 100%;
@@ -68,7 +120,7 @@ header #logo h3 {
 }
 header nav {
   width: 100%;
-  margin-top: 0.8em;
+  margin-top: 0;
   padding: 2px;
   top: 0;
 }
@@ -117,6 +169,13 @@ header nav ol #action a:hover {
 header nav:hover {
   -webkit-backdrop-filter: blur(330em);
           backdrop-filter: blur(330em);
+}
+header .navbar {
+  margin-top: 0;
+  height: 3.5em;
+  z-index: 50;
+  -webkit-backdrop-filter: blur(120px);
+          backdrop-filter: blur(120px);
 }
 
 main {
@@ -174,8 +233,11 @@ main #section1 a:hover {
 main #section1 a:hover h3 {
   color: #e5e7eb;
 }
+main #section2_ {
+  height: 3em;
+}
 main #section2 {
-  width: 80vw;
+  width: 97vw;
   margin: auto;
   margin-top: 30vh;
   margin-bottom: 10vh;
@@ -212,6 +274,7 @@ main #section2 #_thti_storie {
 main #section2:hover {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
+  box-shadow: inset 0px 0px 20px 0px rgb(13, 165, 23);
   color: white;
 }
 
@@ -224,7 +287,8 @@ footer {
   justify-content: center;
   align-items: center;
 }
-footer #pied1, footer #pied2 {
+footer #pied1,
+footer #pied2 {
   width: 30vw;
   display: flex;
   justify-content: center;
